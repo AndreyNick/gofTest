@@ -1,28 +1,27 @@
 package com.patterns.gof.decorator.canteen;
 
 /**
- * Created by anni0913 on 04.02.2016.
+ * Created by anni0913 on 08.02.2016.
  */
-public class DishAddingsRealisation implements DishAddings {
+public abstract class DishAddingsRealisation implements DishAddings {
 
-    private Dish dish;
+    protected Dish dish;
     protected String description;
     protected float price;
 
-    public DishAddingsRealisation(Dish dish) {
-        this.dish = dish;
-    }
-
-    public DishAddingsRealisation() {
-    }
 
     @Override
     public String getDescription() {
-        return dish.getDescription() + " with " + description;
+        return dish.getDescription() + " + " + description;
     }
 
     @Override
-    public float getPrice() {
-        return dish.getPrice() + price;
+    public Size getSize() {
+        return dish.getSize();
+    }
+
+    @Override
+    public void setSize(Size size) {
+        dish.setSize(size);
     }
 }

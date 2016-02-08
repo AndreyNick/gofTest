@@ -6,14 +6,12 @@ package com.patterns.gof.decorator.canteen;
 public class PepperSous extends DishAddingsRealisation {
 
     public PepperSous(Dish dish) {
-        super(dish);
-        price = 10;
-        description = "Hot pepper sous";
+        description = "Pepper sous";
+        this.dish = dish;
     }
 
-    public PepperSous() {
-        price = 10;
-        description = "Hot pepper sous";
+    @Override
+    public float getPrice() {
+        return dish.getPrice() + 5;
     }
-
 }
