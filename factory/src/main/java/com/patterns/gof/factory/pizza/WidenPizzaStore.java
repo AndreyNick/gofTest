@@ -4,7 +4,11 @@ package com.patterns.gof.factory.pizza;
 public class WidenPizzaStore extends PizzaStore{
 
     @Override
-    Pizza createPizza(String type) {
-        return null;
+    protected Pizza createPizza(String type) {
+        if("mozarella".equals(type)) {
+            return new MozarellaPizza();
+        } else if("tomato".equals(type)) {
+            return new TomatoPizza();
+        } else return null;
     }
 }

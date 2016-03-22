@@ -2,7 +2,7 @@ package com.patterns.gof.factory.pizza;
 
 public abstract class PizzaStore {
 
-    abstract Pizza createPizza(String type);
+    protected abstract Pizza createPizza(String type);
 
     public Pizza orderPizza(String type) {
         Pizza pizza;

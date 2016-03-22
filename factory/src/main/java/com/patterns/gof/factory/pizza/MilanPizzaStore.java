@@ -6,7 +6,7 @@ package com.patterns.gof.factory.pizza;
 public class MilanPizzaStore extends PizzaStore {
 
     @Override
-    Pizza createPizza(String type) {
+    protected Pizza createPizza(String type) {
         return null;
     }
 }

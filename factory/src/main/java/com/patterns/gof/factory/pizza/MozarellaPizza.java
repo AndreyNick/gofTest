@@ -9,18 +9,4 @@ public class MozarellaPizza extends Pizza {
         name = "Mozarella";
     }
 
-    @Override
-    public void bake() {
-        System.out.println("Bake in 360 degrees during 25 minutes");
-    }
-
-    @Override
-    public void cut() {
-        System.out.println("");
-    }
-
-    @Override
-    public void box() {
-        System.out.println("");
-    }
 }

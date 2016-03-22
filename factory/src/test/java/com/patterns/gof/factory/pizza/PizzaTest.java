@@ -6,6 +6,8 @@ public class PizzaTest {
 
     @Test
     public void pizzaTest() {
+        PizzaStore store = new WidenPizzaStore();
+        store.orderPizza("tomato");
 
     }
 
