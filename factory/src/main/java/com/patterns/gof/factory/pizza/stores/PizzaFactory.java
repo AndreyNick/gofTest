@@ -1,6 +1,8 @@
-package com.patterns.gof.factory.pizza;
+package com.patterns.gof.factory.pizza.stores;
 
-public abstract class PizzaStore {
+import com.patterns.gof.factory.pizza.pizzas.Pizza;
+
+public abstract class PizzaFactory {
 
     protected abstract Pizza createPizza(String type);
 
